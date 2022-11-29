@@ -5,3 +5,33 @@
     --title-font: 'Righteous', cursive;
     --text-font: 'Roboto', sans-serif;
 }
+
+/* Media Query Extra Extra Extra Large Screen "XXXL" */
+@media screen and (max-width: 1599px){
+
+}
+
+/* Media Query Extra Extra Large Screen "XXL" */
+@media screen and (max-width: 1399px){
+
+}
+
+/* Media Query Extra Large Screen "XL" */
+@media screen and (max-width: 1199px){
+
+}
+
+/* Media Query Large Screen "LG" */
+@media screen and (max-width: 991px){
+
+}
+
+/* Media Query Medium Screen "MD" */
+@media screen and (max-width: 767px){
+
+}
+
+/* Media Query Small Screen "SM" */
+@media screen and (max-width: 575px){
+
+}
