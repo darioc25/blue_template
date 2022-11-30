@@ -6,6 +6,87 @@
     --text-font: 'Roboto', sans-serif;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 8000px;
+}
+
+/* Header */
+.custom-header{
+    background-image: url(./media/header.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg-filter-header{
+    height: 100%;
+    position: relative;
+    padding: 120px 60px 0px 60px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0) 80%);
+}
+
+.header-content{
+    width: 400px;
+}
+
+.header-custom-title{
+    font-size: 60px;
+    color: white;
+    font-family: var(--title-font);
+    margin: 0px;
+}
+
+.header-custom-paragraph{
+    color: white;
+    font-family: var(--text-font);
+    margin: 10px 0px 46px 0px;
+}
+
+.header-custom-button{
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 6px 40px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    margin: 0px;
+}
+
+.header-wave-1{
+    position: absolute;
+    bottom: 0px;
+    left: 0px ;
+    z-index: 1;
+}
+
+.header-wave-2{
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query Extra Extra Extra Large Screen "XXXL" */
 @media screen and (max-width: 1599px){
 
@@ -23,6 +104,22 @@
 
 /* Media Query Large Screen "LG" */
 @media screen and (max-width: 991px){
+    /* Header */
+    .header-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-custom-title{
+        text-align: center;
+    }
+    
+    .header-custom-paragraph{
+        text-align: center;
+        margin: 10px 0px 24px 0px;
+    }
 
 }
 
@@ -33,5 +130,12 @@
 
 /* Media Query Small Screen "SM" */
 @media screen and (max-width: 575px){
+    /* Header */
+    .custom-header{
+        height: 100vh;
+    }
 
+    .header-custom-title{
+        font-size: 50px;
+    }
 }
