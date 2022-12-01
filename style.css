@@ -12,6 +12,8 @@
 
 body{
     height: 8000px;
+    background-color: rgba(255, 166, 0, 0.1) !important;
+    min-width: 280px !important;
 }
 
 /* Header */
@@ -21,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    overflow: hidden;
 }
 
 .bg-filter-header{
@@ -35,7 +38,7 @@ body{
 }
 
 .header-custom-title{
-    font-size: 60px;
+    font-size: 68px;
     color: white;
     font-family: var(--title-font);
     margin: 0px;
@@ -58,17 +61,93 @@ body{
 
 .header-wave-1{
     position: absolute;
-    bottom: 0px;
+    bottom: -60px;
     left: 0px ;
     z-index: 1;
 }
 
 .header-wave-2{
     position: absolute;
-    bottom: 15px;
+    bottom: -40px;
     left: 0px;
     z-index: 0;
 }
+
+/* Section 1 */
+.title-section-1{
+    font-size: 45px;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    text-align: center;
+}
+
+.paragraph-section-1{
+    font-size: 18px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,7 +173,14 @@ body{
 
 /* Media Query Extra Extra Large Screen "XXL" */
 @media screen and (max-width: 1399px){
-
+    /* Header */
+    .header-wave-1{
+        bottom: 0px;
+    }
+    
+    .header-wave-2{
+        bottom: 18px;
+    }
 }
 
 /* Media Query Extra Large Screen "XL" */
@@ -135,7 +221,72 @@ body{
         height: 100vh;
     }
 
+    .bg-filter-header{
+        padding: 50% 60px 0px 60px;
+    }
+
     .header-custom-title{
         font-size: 50px;
+    }
+
+    .header-custom-paragraph{
+        display: none;
+    }
+
+    .header-custom-button{
+        margin-top: 20px;
+    }
+
+    /* Section 1 */
+    .custom-container-section-1{
+        padding: 0px 10px;
+    }
+}
+
+/* Media Query Extra Small Screen "XSM" */
+@media screen and (max-width: 299px){
+    /* Header */
+    .header-wave-2{
+        bottom: 10px;
+    }
+}
+
+/* Media Query For Screen Rotation */
+@media screen and (max-height: 510px){
+    /* Header */
+    .custom-header{
+        height: 100vh;
+    }
+
+    .bg-filter-header{
+        padding: 10% 60px 0px 60px;
+    }
+
+    .header-custom-paragraph{
+        display: none;
+    }
+
+    .header-custom-button{
+        margin-top: 20px;
+    }
+
+    .header-wave-1{
+        bottom: -40px;
+    }
+
+    .header-wave-2{
+        bottom: -20px;
+    }
+}
+
+/* Media Query For Screen Rotation "Fold Model Issues" */
+@media screen and (max-height: 280px){
+    /* Header */
+    .bg-filter-header{
+        padding: 5% 60px 0px 60px;
+    }
+
+    .header-wave-2{
+        bottom: -25px;
     }
 }
