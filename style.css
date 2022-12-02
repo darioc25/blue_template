@@ -4,6 +4,7 @@
     --text-color: rgb(108, 117, 126);
     --title-font: 'Righteous', cursive;
     --text-font: 'Roboto', sans-serif;
+    --shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
 }
 
 *{
@@ -12,7 +13,7 @@
 
 body{
     height: 8000px;
-    background-color: rgba(255, 166, 0, 0.1) !important;
+    /* background-color: rgba(255, 166, 0, 0.1) !important; */
     min-width: 280px !important;
 }
 
@@ -99,6 +100,7 @@ body{
     width: 360px;
     overflow: hidden;
     color: white;
+    box-shadow: var(--shadow);
 }
 
 .img-card-section-2{
@@ -136,12 +138,42 @@ body{
     margin: 0px;
 }
 
+/* Section 3 */
+.custom-container-section-3{
+    padding: 160px 60px 0px 60px;
+}
 
+.custom-card-section-3{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 580px;
+    box-shadow: var(--shadow);
+}
 
+.title-card-section-3{
+    font-size: 32px;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
 
+.paragraph-card-section-3{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    margin: 0px;
+}
 
-
-
+.icon-card-section-3{
+    font-size: 35px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin: 26px 0px;
+}
 
 
 
@@ -234,7 +266,14 @@ body{
 
 /* Media Query Extra Large Screen "XL" */
 @media screen and (max-width: 1199px){
-
+    /* Section 3 */
+    .title-card-section-3{
+        text-align: center;
+    }
+    
+    .paragraph-card-section-3{
+        text-align: center;
+    }
 }
 
 /* Media Query Large Screen "LG" */
@@ -293,6 +332,11 @@ body{
     /* Section 2 */
     .custom-container-section-2{
         padding: 40px 10% 0px 10%;
+    }
+
+    /* Section 3 */
+    .custom-container-section-3{
+        padding: 160px 10px 0px 10px;
     }
 }
 
