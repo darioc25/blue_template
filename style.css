@@ -184,7 +184,7 @@ body{
     padding-left: 120px !important;
 }
 
-.card-section-4{
+.card-section-4-5{
     margin: 10px 20px;
     border-radius: 20px;
     padding: 20px;
@@ -195,29 +195,33 @@ body{
     justify-content: center;
 }
 
-.icon-card-section-4{
+.icon-card-section-4-5{
     font-size: 30px;
     color: var(--main-color);
     margin: 0px;
 }
 
-.number-card-section-4{
+.number-card-section-4-5{
     font-size: 32px;
     font-weight: 600;
     font-family: var(--title-font);
     margin: 10px 0px;
 }
 
-.paragraph-card-section-4{
+.paragraph-card-section-4-5{
     font-size: 18px;
     font-family: var(--text-font);
     margin: 0px;
 }
 
+/* Section 5 */
+.custom-container-section-5{
+    padding: 0px 60px 120px 60px;
+}
 
-
-
-
+.custom-padding-section-5{
+    padding-right: 120px !important;
+}
 
 
 
@@ -328,6 +332,12 @@ body{
     .custom-padding-section-4{
         padding-left: 12px !important;
     }
+
+    /* Section 5 */
+    .custom-padding-section-5{
+        padding-right: 12px !important;
+    }
+    
 }
 
 /* Media Query Medium Screen "MD" */
@@ -337,8 +347,13 @@ body{
         padding: 120px 10px;
     }
 
-    .card-section-4{
+    .card-section-4-5{
         width: 100%;
+    }
+
+    /* Section 5 */
+    .custom-container-section-5{
+        padding: 0px 10px 120px 10px;
     }
 }
 
