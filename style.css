@@ -223,6 +223,42 @@ body{
     padding-right: 120px !important;
 }
 
+/* Section 6 */
+.custom-container-section-6{
+    padding: 60px;
+}
+
+.card-section-6{
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.title-card-section-6{
+    font-size: 28px;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin: 0px 0px 10px 0px;
+}
+
+.paragraph-card-section-6{
+    font-size: 18px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    margin: 0px;
+}
+
+.img-section-6{
+    border-radius: 50%;
+    padding: 5px;
+    border: 4px solid var(--main-color);
+    height: 340px;
+    width: 340px;
+}
 
 
 
@@ -270,6 +306,26 @@ body{
 
 
 
+
+
+
+/* Media Query Ultra Wide */
+@media screen and (min-width: 1600px){
+    /* Section 4 */
+    .custom-container-section-4{
+        padding: 120px 160px;
+    }
+
+    /* Section 5 */
+    .custom-container-section-5{
+        padding: 0px 160px 120px 160px;
+    }
+
+    /* Section 6 */
+    .custom-container-section-6{
+        padding: 60px 160px;
+    }
+}
 
 /* Media Query Extra Extra Extra Large Screen "XXXL" */
 @media screen and (max-width: 1599px){
@@ -333,11 +389,23 @@ body{
         padding-left: 12px !important;
     }
 
+    .card-section-4-5{
+        width: 100%;
+    }
+
     /* Section 5 */
     .custom-padding-section-5{
         padding-right: 12px !important;
     }
     
+    /* Section 6 */
+    .title-card-section-6{
+        text-align: center;
+    }
+    
+    .paragraph-card-section-6{
+        text-align: center;
+    }
 }
 
 /* Media Query Medium Screen "MD" */
@@ -345,10 +413,6 @@ body{
     /* Section 4 */
     .custom-container-section-4{
         padding: 120px 10px;
-    }
-
-    .card-section-4-5{
-        width: 100%;
     }
 
     /* Section 5 */
@@ -393,6 +457,11 @@ body{
     /* Section 3 */
     .custom-container-section-3{
         padding: 160px 10px 0px 10px;
+    }
+
+    /* Section 6 */
+    .custom-container-section-6{
+        padding: 60px 10px;
     }
 }
 
