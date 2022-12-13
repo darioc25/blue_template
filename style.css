@@ -12,8 +12,6 @@
 }
 
 body{
-    height: 8000px;
-    /* background-color: rgba(255, 166, 0, 0.1) !important; */
     min-width: 280px !important;
 }
 
@@ -358,36 +356,52 @@ body{
     margin-top: 30px;
 }
 
+/* Footer */
+.custom-cotainer-footer{
+    background-image: url(./media/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
 
+.filter-footer{
+    padding: 40px 0px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255) 10%, transparent, rgba(0, 0, 0, 0.85) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
 
+.left-card-footer, .right-card-footer{
+    width: 80%;
+}
 
+.title-left-card-footer{
+    font-size: 30px;
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+}
 
+.paragraph-left-card-footer{
+    font-size: 16px;
+    font-family: var(--text-font);
+    margin: 0px;
+}
 
+.icon-box-footer{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.title-right-card-footer{
+    font-size: 30px;
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    margin-bottom: 26px;
+}
 
 /* Media Query Ultra Wide */
 @media screen and (min-width: 1600px){
@@ -405,11 +419,6 @@ body{
     .custom-container-section-6{
         padding: 60px 160px;
     }
-}
-
-/* Media Query Extra Extra Extra Large Screen "XXXL" */
-@media screen and (max-width: 1599px){
-
 }
 
 /* Media Query Extra Extra Large Screen "XXL" */
@@ -498,6 +507,27 @@ body{
     }
     
     .paragraph-card-section-6{
+        text-align: center;
+    }
+
+    /* Footer */
+    .filter-footer{
+        background: linear-gradient(180deg, rgba(255, 255, 255) 10%, transparent, rgba(0, 0, 0, 0.85) 70%);
+    }
+
+    .left-card-footer{
+        margin-bottom: 40px;
+    }
+
+    .title-left-card-footer{
+        text-align: center;
+    }
+    
+    .paragraph-left-card-footer{
+        text-align: center;
+    }
+
+    .title-right-card-footer{
         text-align: center;
     }
 }
