@@ -260,23 +260,103 @@ body{
     width: 340px;
 }
 
+/* Section 7 */
+.custom-container-section-7{
+    padding: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.title-section-7{
+    font-size: 34px;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
 
+.custom-timeline{
+    background-color: white;
+    width: 80%;
+    position: relative;
+    padding: 20px 0px;
+}
 
+.custom-timeline::before{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 3px;
+    right: 50%;
+}
 
+.custom-timeline-element{
+    position: relative;
+    width: 50%;
+    padding: 40px;
+}
 
+.title-timeline-element-section-7{
+    font-size: 24px;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
 
+.paragraph-timeline-element-section-7{
+    font-size: 16px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    margin: 0px;
+}
 
+.custom-timeline-element:nth-child(odd){
+    position: relative;
+    float: left;
+    clear: right;
+}
 
+.custom-timeline-element:nth-child(odd)::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 3px solid var(--main-color);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    top: 0px;
+    right: 1px;
+    transform: translate(50%, -50%);
+}
 
+.custom-timeline-element:nth-child(even){
+    position: relative;
+    float: right;
+    clear: left;
+    text-align: end;
+}
 
+.custom-timeline-element:nth-child(even)::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 3px solid var(--main-color);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    top: 0px;
+    left: -1px;
+    transform: translate(-50%, -50%);
+}
 
-
-
-
-
-
-
+.button-section-7{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 6px 35px;
+    margin-top: 30px;
+}
 
 
 
@@ -351,6 +431,15 @@ body{
     .custom-card-section-2{
         margin-bottom: 30px;
     }
+
+    /* Section 7 */
+    .custom-container-section-7{
+        padding: 60px;
+    }
+
+    .custom-timeline{
+        width: 100%;
+    }
 }
 
 /* Media Query Extra Large Screen "XL" */
@@ -362,6 +451,11 @@ body{
     
     .paragraph-card-section-3{
         text-align: center;
+    }
+
+    /* Section 7 */
+    .custom-container-section-7{
+        padding: 60px 0px;
     }
 }
 
@@ -418,6 +512,37 @@ body{
     /* Section 5 */
     .custom-container-section-5{
         padding: 0px 10px 120px 10px;
+    }
+
+    /* Section 7 */
+    .custom-timeline::before{
+        height: 100%;
+        left: 16px;
+    }
+
+    .custom-timeline-element{
+        width: 100%;
+    }
+
+    .custom-timeline-element:nth-child(odd){
+        float: right;
+        clear: left;
+    }
+    
+    .custom-timeline-element:nth-child(odd)::after{
+        left: 4px;
+        transform: translate(0%, -50%);
+    }
+
+    .custom-timeline-element:nth-child(even){
+        float: right;
+        clear: left;
+        text-align: start;
+    }
+    
+    .custom-timeline-element:nth-child(even)::after{
+        left: 4px;
+        transform: translate(0%, -50%);
     }
 }
 
